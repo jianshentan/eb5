@@ -17,13 +17,13 @@ router.get('/submit', function(req, res) {
   var helper = require('sendgrid').mail;
   var from_email = new helper.Email('new_submission@hellovelocity.com');
   var to_email = new helper.Email('info@nyeb5fund.com');
-  var subject = 'New request from design.hellovelocity.com!';
-  var body = "You have a new collaboration request! \n\n" + 
+  var subject = 'New submission from www.nyeb5fund.com!';
+  var body = "You have a new submission! \n\n" + 
              "Name: " + data.firstname + ", " + data.lastname + "\n\n" +
              "Email: " + data.email + "\n\n" +
-             "Organization: " + data.organization + "\n\n" +
+             "Phone: " + data.phone+ "\n\n" +
              "Description: " + data.description + "\n\n" + 
-             "-- hv bot <3";
+             "-- hv email bot";
   var content = new helper.Content('text/plain', body);
   var mail = new helper.Mail(from_email, subject, to_email, content);
  
