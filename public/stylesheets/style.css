@@ -1,0 +1,393 @@
+/* --------------------------
+   -- PRESET ELEMENTS
+   -------------------------- */
+body {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  overflow-x: hidden;
+}   
+.h1, .h2, .h3, .h4 {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  margin: 0px !important;
+  font-weight: 300;
+}
+.btn, 
+.field {
+  margin-top: 20px;
+}
+.eb5-relative {
+  position: relative; 
+}
+.eb5-absolute {
+  position: absolute; 
+}
+.eb5-inline-block {
+  display: inline-block;
+}
+.eb5-align-center {
+  text-align: center; 
+}
+.eb5-absolute-center {
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.eb5-blue { 
+  color: #0000ff;
+}
+.eb5-gray {
+  color: #aaa;
+}
+.eb5-dark-gray {
+  color: #333;
+}
+.eb5-white {
+  color: white;
+}
+.eb5-bg-blue { 
+  background-color: #0000ff;
+}
+.eb5-bg-light-gray { 
+  background-color: #eee;
+}
+.eb5-bg-dark-gray { 
+  background-color: #333;
+}
+.eb5-bg-white {
+  background-color: white;
+}
+.eb5-bg-black {
+  background-color: black;
+}
+.eb5-section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.eb5-shadow {
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+/* --------------------------
+   -- CUSTOM ELEMENTS
+   -------------------------- */
+
+.eb5-nav {
+  border-bottom: 2px solid white;
+  position: fixed;
+  z-index: 1000;
+  top: 0px;
+}
+   
+/* Browser Box */
+.eb5-browser-nav {
+  max-width:800px;
+	min-width:600px;
+	width: 60vw;
+	height:32px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	background-color:#ccc;
+	margin: 0 auto;
+}
+.eb5-browser-btn {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 10px 0px 10px 10px;
+}
+.eb5-browser-body {
+  max-width: 800px;
+  min-width:600px;
+  width: 60vw;
+  height: 400px;
+  border: 2px solid #ccc;
+  margin: 0 auto;
+}
+.eb5-browser-page {
+	width: 97%;
+	height: 95%;
+	padding: 2.5%;
+	background-color: #ffdc29;
+}
+
+/* Mobile Box */
+.eb5-mobile-box {
+  position: absolute;
+	top: 160px;
+	right: 50%;
+	transform: translateX(-130%) !important;
+}
+.eb5-mobile {
+	border-radius: 24px;
+	width: 194px;
+	height: 400px;
+	background-color: #ccc;
+
+  /* border-radius */
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  /* box-shadow */
+  -webkit-box-shadow: rgba(0,0,0,0.3) 2px 2px 6px;
+  -moz-box-shadow: rgba(0,0,0,0.3) 2px 2px 6px;
+  box-shadow: rgba(0,0,0,0.3) 2px 2px 6px; 
+}
+.eb5-mobile-screen {
+	background-color: white;
+	margin: 50px 7px;
+	width: 180px;
+	height: 300px;
+}
+.eb5-mobile-content {
+	background-color: #ffdc29;
+	width: 90%;
+	height: 93%;
+	margin: 5%;
+}
+.eb5-mobile-home-btn {
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 32px;
+	height: 32px;
+	border: 2px solid white;
+	border-radius: 50%;
+}
+
+/* ecommerce modal */
+.eb5-ecommerce-box {
+  position: absolute;
+	top: 400px;
+	left: 50%;
+	transform: translateX(24%) !important;
+}
+.eb5-ecommerce-nav {
+  width:360px;
+	height:32px;
+	background-color: white;
+}
+.eb5-ecommerce-content {
+	width:360px;
+	height: 100px;
+	background-color: #ffdc29;
+}
+.eb5-ecommerce-content-circle {
+  border-radius:50%;
+	background-color:#333;
+	margin: 20px;
+	width: 60px;
+	height: 60px;
+}
+.eb5-ecommerce-content-text {
+  padding-top: 30px;
+  vertical-align: top;
+}
+.eb5-vi-content {
+  height: 560px;
+}
+.eb5-vi-text {
+  height: 560px;
+	background-size: 100%;
+	background-position-x: 0px;
+	background-attachment: fixed;
+	background-color: blue;
+	background-image:url('../images/bg-pinkhouse.png'); 
+}
+
+/* BI browser */
+.eb5-bi-box {
+  
+}
+.eb5-bi-nav {
+	max-width:960px;
+	width: 80vw;
+	height: 32px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	background-color:#ccc;
+	margin: 0 auto;
+}
+.eb5-bi-page {
+	max-width:960px;
+	width: 80vw;
+	height: 500px;
+	border: 2px solid #ccc;
+	background-color: white;
+	margin: 0 auto;
+}
+.eb5-bi-content-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 97%;
+	height: 95%;
+	background-color: #eee;
+}
+.eb5-bi-image {
+  background-color: white;
+  width: 240px;
+  height: 160px;
+  margin: 10px 10px 0px 0px;
+  display: inline-block;
+}
+.eb5-bi-image img {
+  width: 100%;
+}
+.eb5-service-icon {
+  background-color: #333;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin-right: 20px;
+  position: relative;
+}
+.eb5-service-icon img {
+  width:60px;
+  height:60px;
+  margin: 10px;
+}
+.eb5-service-text {
+  width: 180px;
+}
+.eb5-service-icon ,
+.eb5-service-text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.eb5-contact-section {
+  height: 80vh;
+  max-height: 600px;
+  min-height: 500px;
+}
+.eb5-form-wrapper {
+  width:70vw;
+  min-width:300px;
+  max-width:600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.field.warning{
+  border: 2px solid red; 
+}
+
+.eb5-mission,
+.eb5-who {
+  height: 560px;
+}
+
+.eb5-mission-content,
+.eb5-who-content {
+  width: 60%;
+}
+
+/* Carousel */
+.carousel-header {
+  background-color: white;
+  color: #333;
+  padding: 10px 20px 10px 24vw;
+  position: absolute;
+  bottom: 25vh;
+}
+.carousel-header h1 {
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 3.6em;
+  z-index: 100;
+}
+.carousel-indicators {
+  bottom: 15vh;
+}
+.carousel-indicators li.active,
+.carousel-indicators li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.carousel-scroll-down {
+  font-size: 2.0em;
+  position: absolute;
+  bottom: 5vh;
+  z-index: 100;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+.carousel-gradient {
+  z-index: 10;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 1%, rgba(0,0,0,0.64) 98%, rgba(0,0,0,0.65) 99%);
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 1%,rgba(0,0,0,0.64) 98%,rgba(0,0,0,0.65) 99%);
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 1%,rgba(0,0,0,0.64) 98%,rgba(0,0,0,0.65) 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+}
+
+/* ========================================== 
+  Loading  
+   ========================================== */
+
+.eb5-loading-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 1002;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+}
+.eb5-loading-overlay .eb5-loading {
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.eb5-loading-image {
+  width: 200px;
+  height: 200px;
+}
+.eb5-loading-overlay .eb5-loading .eb5-loading-image {
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/*
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

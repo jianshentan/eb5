@@ -1,0 +1,149 @@
+body {
+  width: 100vw;
+}
+.eb5-nav {
+  width: 100vw;
+}
+
+/* Web Design + Develop section */
+.eb5-mobile-box {
+  position: relative;
+  width: 80vw;
+}
+.eb5-mobile-box {
+  margin: 0 auto;
+  top: inherit;
+  left: inherit;
+  right: inherit;
+  transform: inherit !important;
+}
+.eb5-ecommerce-box {
+  margin: 0 auto;
+  top: inherit;
+  left: 50%;
+  right: inherit;
+  transform: translateX(-50%);
+}
+.eb5-mobile {
+  margin: 0 auto;
+}
+.eb5-mobile-ecommerce {
+  bottom: 0px;
+  left: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top: 1px solid white;
+}
+.eb5-web-tagline {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.eb5-vi-text {
+	height: 70vh;
+	background-size: 200%;
+	background-attachment: scroll;
+}
+.eb5-vi-wrapper {
+  width: 80vw;
+}
+.eb5-vi-content {
+  height: 70vh; 
+}
+.eb5-banana-image {
+  width: 90vw;
+}
+
+
+.eb5-bi-page {
+	width: 80vw;
+	height: 80vh;
+	border: 0px;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+.eb5-bi-content-wrapper {
+  width: 70vw;
+  top: 5vw;
+  left: 5vw;
+  position: relative;
+  transform: inherit;
+}
+.eb5-bi-image {
+  background-color: white;
+  width: 60vw;
+  left: 5vw;
+  height: 40vw;
+  margin-top: 5vw;
+  display: inline-block;
+}
+
+.eb5-services {
+  width: 90vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.hv .row { margin: 0px; }
+.eb5-service {
+  display: inline-block;
+  text-align: center;
+  width: 44vw;
+  padding: 0px;
+  height: 20vh;
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+}
+.eb5-service-icon {
+  height: 15vw;
+  width: 15vw;
+  margin-right: 0px;
+  position: relative;
+  margin: 0 auto;
+}
+.eb5-service-icon img {
+  width: 15vw;
+  height: 15vw;
+  margin: 10px;
+}
+.eb5-service-text {
+  width: 40vw;
+}
+.eb5-service-icon ,
+.eb5-service-text {
+  display: inherit;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.eb5-contact-section {
+  height: inherit;
+  min-height: inherit;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.eb5-form {
+  width: 80vw;
+  margin: 0 auto;
+}
+.eb5-form-wrapper {
+  width:80vw;
+  margin-left: 10vw;
+  min-width: inherit;
+  max-width: inherit;
+  position: relative;
+  left: inherit;
+  top: inherit;
+  transform: inherit;
+}
+
+.eb5-mission,
+.eb5-who {
+  height: 60vh;
+}
+
+.eb5-mission-content,
+.eb5-who-content {
+  width: 80vw;
+}
+
