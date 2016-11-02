@@ -1,15 +1,6 @@
-console.log("test");
 
-/* -----------------------------
-	 ------------- Loading Overlay
-	 ----------------------------- */
-	
-$( window ).on('load', function() {
-  /*
-  setTimeout( function() {
-    $(".eb5-loading-overlay").fadeOut();
-  }, 200);
-  */
+$(document).ready(function(){ 
+  $('.carousel').carousel();  
 });
 
 /* -----------------------------

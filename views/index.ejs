@@ -101,15 +101,15 @@
 			</div>
 		</div>
 		<% } else { %>
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<div id="carousel" class="carousel slide" data-ride="carousel">
 			<!-- Gradient -->
 			<div class="carousel-gradient" style="width:100%;height:20%;position:absolute;bottom:0px;"></div>
 			
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
-		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel" data-slide-to="1"></li>
+		    <li data-target="#carousel" data-slide-to="2"></li>
 		  </ol>
 		  
 		  <!-- Scroll down button -->
@@ -119,12 +119,12 @@
 		
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
-		  	<div class="item">
+		  	<div class="item active">
 		      <img src="/images/bg_invest.jpg" style="width: 100vw;" alt="Invest">
 		      <div class="carousel-header"><h1 style="font-weight:300;">Invest</h1></div>
 		      <!--<div class="carousel-caption">invest</div>-->
 		    </div>
-		    <div class="item active">
+		    <div class="item">
 		      <img src="/images/bg_apply.jpg" style="width: 100vw;" alt="Apply">
 		      <div class="carousel-header"><h1 style="font-weight:300;">Apply</h1></div>
 		      <!--<div class="carousel-caption">apply</div>-->
@@ -366,6 +366,10 @@
 			<% } %>
 			<br>
 			<br>
+			<div class="container" style="font-size:12px;padding-left:10vw;padding-right:10vw;text-align:left;">
+				EB-5 PRESENTATIONS ARE OPEN ONLY TO PERSONS WHO PROVIDE SATISFACTORY VERIFICATION OF THEIR STATUS AS “ACCREDITED INVESTORS” UNDER THE U.S. FEDERAL SECURITIES LAWS. OFFERS WILL BE MADE TO ACCREDITED INVESTORS ONLY BY PRIVATE PLACEMENT MEMORANDUM OF W. 108TH STREET EB-5 LENDER, LLC. THIS ANNOUNCEMENT DOES NOT CONSTITUTE AN OFFER TO SELL OR A SOLICITATION OF AN OFFER TO BUY ANY SECURITIES IN ANY JURISDICTION TO ANY PERSON TO WHOM IT IS UNLAWFUL TO MAKE SUCH OFFER, SALE OR SOLICITATION. PAST PERFORMANCE IS NOT INDICATIVE OF FUTURE RESULTS.
+			</div>
+			<br>
 			<div class="" style="font-size:12px;">
 				For supplemental and additional Disclaimers, please click <a href="/terms">here</a>.
 			</div>
@@ -373,7 +377,10 @@
 				2016 © W. 108th Street EB-5 Lender, LLC. All rights reserved.
 			</div>
 			<br>
+			<% if (mobile == "true") { %>
+			<br>
 			<a target="_blank" href="https://www.linkedin.com/company/w.-108th-street-eb-5-lender-llc?trk=top_nav_home"><img src="images/linkedin-icon.png" width="30"></a>
+			<% } %>
 			<br>
 			<br>
 		</div>
