@@ -115,6 +115,7 @@ $("#submit").click(function(){
       description: description.val()
     };
     
+    goog_report_conversion();
     $.get('/submit', data)
     .done(function() {
       $("#loadingLabel").hide();
