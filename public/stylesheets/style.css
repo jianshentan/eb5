@@ -82,6 +82,7 @@ body {
   color:white;
   padding-top:3em;
   padding-bottom:1em;
+  z-index: 200;
 }
 .eb5-notice-content-contact {
   text-align: right;
@@ -95,7 +96,7 @@ body {
   padding:3px 0;
   width:100vw;
   border-top:2px solid white;
-  z-index: 101;
+  z-index: 201;
 }
 .eb5-notice-close > div {
   cursor:pointer;
