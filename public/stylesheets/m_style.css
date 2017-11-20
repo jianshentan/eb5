@@ -5,6 +5,14 @@ body {
   width: 100vw;
 }
 
+.eb5-notice-content {
+  grid-template-columns: 1fr;
+}
+.eb5-notice-content-contact {
+  margin-top: 1em;
+  text-align: left;
+}
+
 /* Web Design + Develop section */
 .eb5-mobile-box {
   position: relative;

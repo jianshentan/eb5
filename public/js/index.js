@@ -4,6 +4,13 @@ $(document).ready(function(){
 });
 
 /* -----------------------------
+   -- Notice 
+   ----------------------------- */
+$(".eb5-notice-close > div").click(function() {
+  $(".eb5-notice").slideUp();
+})
+
+/* -----------------------------
 	 -- Navbar hide on scroll down
 	 ----------------------------- */
 	 
