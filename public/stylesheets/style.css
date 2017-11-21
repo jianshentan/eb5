@@ -75,14 +75,17 @@ body {
    -- CUSTOM ELEMENTS
    -------------------------- */
 
+.eb5-notice {
+  z-index: 200;
+}
 .eb5-notice-content {
   position:relative;
   display:grid;
-  grid-template-columns: 1fr 1fr;
   color:white;
   padding-top:3em;
   padding-bottom:1em;
   z-index: 200;
+  grid-template-columns: 1fr 1fr;
 }
 .eb5-notice-content-contact {
   text-align: right;
@@ -323,7 +326,7 @@ body {
 .carousel-header {
   background-color: white;
   color: #333;
-  padding: 10px 20px 10px 24vw;
+  padding: 10px 20px 10px 10vw;
   position: absolute;
   bottom: 25vh;
 }
@@ -403,7 +406,76 @@ body {
 */
 
 
+/* ========== MODAL ========= */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed !important; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
 
+/* Modal Content */
+.modal-content {
+  border-radius: 0px !important;
+  position: relative;
+  background-color: black;
+  margin: auto;
+  padding: 0;
+  width: 720px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+#jf-close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+#jf-close:hover,
+#jf-close:focus {
+    color: #888;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-header {
+    background-color: black;
+    color: white;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 0px;
+    padding-bottom: 4px;
+}
+.modal-body {
+  padding: 0px;
+}
+#jf-video {
+  width: 960px;
+  height: 500px;
+}
 
 
 

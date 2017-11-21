@@ -55,9 +55,39 @@
 		  ga('hvTracker.send', 'pageview');
 				
 		</script>
+			
 	</head>
 
-	<body>
+	<body>	
+	
+		<div id="fb-root"></div>
+		
+		<script>
+	    var my_video_player;
+			window.fbAsyncInit = function() {
+	      FB.init({
+	        appId      : '1749656441949331',
+	        xfbml      : true,
+	        version    : 'v2.11'
+	      });
+	    
+	      // Get Embedded Video Player API Instance
+	      FB.Event.subscribe('xfbml.ready', function(msg) {
+	        if (msg.type === 'video') {
+	          my_video_player = msg.instance;
+	        }
+	      });
+	    };
+	
+	    (function(d, s, id){
+	       var js, fjs = d.getElementsByTagName(s)[0];
+	       if (d.getElementById(id)) {return;}
+	       js = d.createElement(s); js.id = id;
+	       js.src = "https://connect.facebook.net/en_US/sdk.js";
+	       fjs.parentNode.insertBefore(js, fjs);
+	     }(document, 'script', 'facebook-jssdk'));
+		</script>
+
 		<!-- Google Code for NY EB5 Fund Conversion Page
 		In your html page, add the snippet and call
 		goog_report_conversion when someone clicks on the
@@ -99,7 +129,7 @@
 	  <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
 	  
 	  <!-- Notice -->
-	  <div class="eb5-notice eb5-bg-dark-gray" style="min-height:20px;position:fixed;bottom:0px;left:0px;z-index:100;width:100vw;">
+	  <div class="eb5-notice eb5-bg-dark-gray" style="min-height:20px;position:fixed;bottom:0px;left:0px;width:100vw;">
 	  	<div class="container">
 	  		<div class="eb5-notice-close eb5-bg-gray"><div>close</div></div>
 	  		<div class="eb5-notice-content" style="">
@@ -115,7 +145,7 @@
 	  			<div class="eb5-notice-content-contact">
 	  				Please contact us to schedule a<br>
 	  				private consultation with our team.<br><br>
-	  				<a href="mailto:infor@nyeb5fund.com" style="color:white;text-decoration:underline;">info@nyeb5fund.com</a>
+	  				<a href="mailto:infor@nyeb5fund.com" style="color:white;">info@nyeb5fund.com</a>
 	  			</div>
 	  		</div>
 	  	</div>
@@ -140,6 +170,19 @@
 			</div>
 		</div>	
 		
+		<!-- The Modal -->
+		<div id="jf-modal" class="modal">
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <div class="modal-header">
+		      <span id="jf-close">&times;</span>
+		    </div>
+		    <div class="modal-body" id="jf-video-container">
+		    	<div id="my-video-player-id" class="fb-video" data-href="https://www.facebook.com/679795075547691/videos/679809455546253/" data-width="7200" data-show-text="false"><blockquote cite="https://www.facebook.com/679795075547691/videos/679809455546253/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/679795075547691/videos/679809455546253/"></a><p>Immigrate to the USA with Green Cards for yourself and your family. Invest in your future through New York City Real Estate! Contact us today: reema&#064;luxegroupe.nyc</p>Posted by <a href="https://www.facebook.com/NY-EB-5-FUND-679795075547691/">NY EB-5 FUND</a> on Sunday, October 1, 2017</blockquote></div>
+		    </div>
+		  </div>
+		</div>	
+		
 		<!-- Banner -->
 		<% if (mobile == "true" ){ %>
 		<div class="eb5-relative eb5-bg-blue" style="
@@ -156,6 +199,8 @@
 				<br>
 				<br>
 				<div class="h1" style="font-size:1.5em;font-weight:800;">Invest. Apply. Live.</div>
+				<br>
+				<div id="jf-video-trigger" class="h2" style="font-size:1.2em;font-weight:800;" >Play Video</div>
 			</div>
 		</div>
 		<% } else { %>
@@ -165,9 +210,11 @@
 			
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
+		    <!--
 		    <li data-target="#carousel" data-slide-to="0" class="active"></li>
 		    <li data-target="#carousel" data-slide-to="1"></li>
 		    <li data-target="#carousel" data-slide-to="2"></li>
+		    -->
 		  </ol>
 		  
 		  <!-- Scroll down button -->
@@ -179,23 +226,26 @@
 		  <div class="carousel-inner" role="listbox">
 		  	<div class="item active">
 		      <img src="/images/bg_invest.jpg" style="width: 100vw;" alt="Invest">
-		      <div class="carousel-header"><h1 style="font-weight:300;">Invest</h1></div>
-		      <!--<div class="carousel-caption">invest</div>-->
+		      <div class="carousel-header">
+		      	<h1 style="font-weight:300;">
+		      		Invest. Apply. Live.
+		      	</h1>
+		      	<h3 id="jf-video-trigger" style="font-weight:300;cursor:pointer;text-decoration:underline;">Play video &#9658;</h3>
+		      </div>
 		    </div>
+		    <!--
 		    <div class="item">
 		      <img src="/images/bg_apply.jpg" style="width: 100vw;" alt="Apply">
 		      <div class="carousel-header"><h1 style="font-weight:300;">Apply</h1></div>
-		      <!--<div class="carousel-caption">apply</div>-->
 		    </div>
 		    <div class="item">
 		      <img src="/images/bg_live.jpg" style="width: 100vw;" alt="Live">
 		      <div class="carousel-header"><h1 style="font-weight:300;">Live</h1></div>
-		      <!--<div class="carousel-caption">live</div>-->
 		    </div>
+		    -->
 		  </div>
 		</div>
 		<% } %>
-		
 		
 		<!-- 3 icons -->
 		<div class="">

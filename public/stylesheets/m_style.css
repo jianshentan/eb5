@@ -155,3 +155,46 @@ body {
   width: 80vw;
 }
 
+/* ========== MODAL ========= */
+/* The Modal (background) */
+.modal {
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+}
+
+/* Modal Content */
+.modal-content {
+  margin-top: 15vh;
+  width: 100vw;
+}
+
+/* The Close Button */
+#jf-close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+#jf-close:hover,
+#jf-close:focus {
+    color: #888;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-header {
+    background-color: black;
+    color: white;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.modal-body {
+  height:210px;
+  padding: 0px;
+}
+#jf-video {
+  width: 90vw;
+  height: 52vw;
+  margin-left: 5vw;
+}
