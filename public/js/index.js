@@ -136,6 +136,7 @@ $("#submit").click(function(){
       $("#submit").prop("disabled", true);  
       $("#loadingLabel").hide();
       ga('send', 'event', 'Form', 'Submit', 'Contact Form');
+      ga('hvTracker.send', 'event', 'Form', 'Submit', 'Contact Form');
     });
     
   } else {
@@ -158,6 +159,7 @@ var jf_modal = document.getElementById("jf-modal");
 document.getElementById("jf-video-trigger").onclick = function() { 
   jf_modal.style.display = "block"; 
   ga('send', 'event', 'Videos', 'play', 'FB Video');
+  ga('hvTracker.send', 'event', 'Videos', 'play', 'FB Video');
 };
 // Get the <span> element that closes the modal // When the user clicks on <span> (x), close the modal
 document.getElementById("jf-close").onclick = function() { 
