@@ -11,6 +11,15 @@ $(".eb5-notice-close > div").click(function() {
 })
 
 /* -----------------------------
+   -- Scroll to contact 
+   ----------------------------- */
+$(".carousel-contact").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".eb5-contact-section").offset().top},
+        'slow');
+});
+
+/* -----------------------------
 	 -- Navbar hide on scroll down
 	 ----------------------------- */
 	 
