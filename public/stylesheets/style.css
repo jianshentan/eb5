@@ -340,9 +340,6 @@ body {
 .carousel-header {
   /*background-color: rgba(0,0,0,0.4); */
   
-  padding: 10px 20px 10px 10vw;
- 
-  bottom: 25vh;
   color: black;
 
  position: fixed;
