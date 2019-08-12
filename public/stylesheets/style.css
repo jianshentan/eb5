@@ -338,11 +338,19 @@ body {
 
 /* Carousel */
 .carousel-header {
-  background-color: rgba(0,0,0,0.4);
+  /*background-color: rgba(0,0,0,0.4); */
+  
   padding: 10px 20px 10px 10vw;
-  position: absolute;
+ 
   bottom: 25vh;
-  color: white;
+  color: black;
+
+ position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+
 }
 .carousel-header h1 {
   font-weight: 400;
