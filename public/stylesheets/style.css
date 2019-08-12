@@ -337,18 +337,34 @@ body {
 
 
 /* Carousel */
-.carousel-header {
-  /*background-color: rgba(0,0,0,0.4); */
-  
-  color: black;
 
- position: fixed;
+.carousel-header {
+
+  color: black;
+   position: fixed;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
 
 
 }
+
+.carousel-change {
+
+  color: black;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+
+}
+
+
+
+
+
+
 .carousel-header h1 {
   font-weight: 400;
   margin-top: 0px;
