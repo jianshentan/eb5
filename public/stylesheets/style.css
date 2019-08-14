@@ -325,9 +325,9 @@ body {
 /* Benefits and Safeguards */
 #eb5-benefits {
   display: grid;
-  grid-column-gap: 0.25em;
+  grid-column-gap: 1em;
   grid-row-gap: 0.5em;
-  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  grid-template-columns: 0.75fr 0.75fr 0.75fr;
   grid-template-rows: auto auto;
 }
 #eb5-benefits > div.desc{
@@ -347,6 +347,7 @@ body {
    transform: translate(-50%, -50%);
 
 
+
 }
 
 .carousel-change {
@@ -363,14 +364,23 @@ body {
 
 
 
-
-
 .carousel-header h1 {
-  font-weight: 400;
+  /*font-weight: 800;
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 3.6em;
-  z-index: 100;
+  z-index: 100;*/
+
+font-family: 'EB Garamond', serif;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  font-style:normal;
+  padding-top: 0.1em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+
+
 }
 .carousel-indicators {
   bottom: 15vh;
