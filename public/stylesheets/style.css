@@ -371,15 +371,9 @@ body {
   font-size: 3.6em;
   z-index: 100;*/
 
-font-family: 'EB Garamond', serif;
-  font-size: 3.5em;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  display: block;
-  font-style:normal;
-  padding-top: 0.1em;
-  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
-
+font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  margin: 0px !important;
+  font-weight: 300;
 
 }
 .carousel-indicators {
