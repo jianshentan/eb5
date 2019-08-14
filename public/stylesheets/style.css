@@ -325,9 +325,9 @@ body {
 /* Benefits and Safeguards */
 #eb5-benefits {
   display: grid;
-  grid-column-gap: 2em;
+  grid-column-gap: 1.5em;
   grid-row-gap: 0.5em;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
   grid-template-rows: auto auto;
 }
 #eb5-benefits > div.desc{
